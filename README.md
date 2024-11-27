@@ -26,7 +26,8 @@ Assurez-vous d'avoir les outils suivants installés sur votre machine :
 ## Installation
 
 1. Clonez ce dépôt sur votre machine locale :
-    ```bash
--  git clone https://github.com/maiga28/call_app.git
--  cd back
+
+```bash
+    git clone https://github.com/maiga28/call_app.git
+    cd back
 "# call_app" 
