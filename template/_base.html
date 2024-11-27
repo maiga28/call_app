@@ -1,0 +1,33 @@
+<!-- templates/_base.html -->
+
+{% load compress %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Center</title>
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    {% endcompress %}
+
+</head>
+
+<body class="bg-black/10">
+    <div class="container mx-auto mt-4">
+        {% include "header.html" %}
+        {% block content %}
+        {% endblock content %}
+        {% comment %} {% include "footer.html" %} {% endcomment %}
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    {% comment %} <script src="node_modules/preline/dist/preline.js"></script> {% endcomment %}
+</body>
+
+</html>

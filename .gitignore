@@ -1,0 +1,6 @@
+venv/
+.tailwind.config.js
+.node_modules
+.jsconfig.jsconfig
+.package-lock.json
+db.sqlite3/
